@@ -25,7 +25,7 @@ let timer;
 
 // creating an audio element
 let player = document.createElement('audio');
-const url = 'http://api.alquran.cloud/v1/quran/ar.alafasy'
+const url = 'https://api.alquran.cloud/v1/quran/ar.alafasy'
 fetch(url).then((response) => response.json())
 .then(({data}) => {
 	let list = [
