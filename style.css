@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation:wght@400;600&display=swap');
+
+* {
+    font-family: 'Edu NSW ACT Foundation', cursive;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    color: #fff;
+    list-style: none;
+}
+
+.container {
+    position: absolute;
+    background-image:
+    url(https://images.pexels.com/photos/15793329/pexels-photo-15793329.jpeg?auto=compress&cs=tinysrgb&w=600);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    max-width: 30.5rem;
+    width: 45vw;
+    padding: 10px;
+}
+
+.container h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .5rem;
+    margin-top: 1rem;
+}
+
+.book {
+    color: brown;
+}
+
+.wrapper {
+    width: 95%;
+    box-shadow: 0px 2px 5px #fff;
+    margin-top: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.menuIcon {
+    position: absolute;
+    font-size: 20px;
+    left: .4em;
+    top: .5em;
+    z-index: 10;
+    cursor: pointer;
+}
+
+.closeMenu {
+    position: absolute;
+    right: 0;
+    padding: 1.5px;
+    font-size: 25px;
+}
+
+.contain {
+    display: none;
+    overflow: none;
+    padding: 5px;
+    background-color: #1c1711;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contain .trackList {
+    margin-top: 2rem;
+    height: 20vh;
+    overflow: scroll;
+}
+
+.contain .trackList ul li {
+    border-bottom: 1px solid ;
+}
+
+.heading {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 10rem;
+}
+
+.title {
+    font-size: 25px;
+    font-weight: 600;
+    text-transform: capitalize;
+    margin-top: 1rem;
+    margin-bottom: 2.5rem;
+}
+
+.image img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+    border: 1px solid white;
+}
+
+.songName {
+    font-size: 20px;
+}
+
+.heading p {
+    margin-top: 1.2rem;
+    text-decoration: underline;
+    letter-spacing: .1em;
+    font-size: 18px;
+}
+
+ .controls {
+    display: flex;
+    gap: .5rem;
+    font-size: 25px;
+    margin-bottom: 3rem;
+ }
+
+ .defaultTime {
+    font-size: 20px;
+    margin-right: 1rem;
+ }
+
+ .endTime {
+    font-size: 20px;
+    margin-left: 1rem;
+ }
+
+ .controls ion-icon {
+    color: #fff;
+    padding: 0 2px;
+    cursor: pointer;
+ }
+
+ input {
+    height: 1px;
+    background-color: black;
+
+ }
+
+ .searchBox::placeholder {
+    color: brown;
+    opacity: 0.4;
+ }
+
+ .volume {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    rotate: -90deg;
+    position: absolute;
+    margin-right: -270px;
+    margin-bottom: 70px;
+ }
+
+ .decrease, .increase {
+    rotate: 90deg;
+    font-size: 20px;
+    cursor: pointer;
+ }
+
+ @media screen and (max-width: 800px) and (min-width: 600px){
+    .container{
+        width: 100%;
+    }
+    .volume {
+        margin-right: -260px;
+     }  
+
+ }
+
+ @media screen and (max-width: 599px) and (min-width: 320px) {
+    .container{
+        width: 100%;
+    }
+
+    .wrapper {
+        box-shadow: none;
+    }
+ }

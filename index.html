@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quran Recitation App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h2>Quran Audio App</h2>
+        <div class="wrapper">
+            <div class="menuIcon">
+                <ion-icon name="grid-outline" class="openMenu"></ion-icon>
+                <div class="contain">
+                    <ion-icon name="close-outline" class="closeMenu"></ion-icon>
+                    <div class="trackList"></div>
+                </div>
+            </div>
+            <!-- <div class="search">
+                <input type="search" class="searchBox" placeholder="search for a verse">
+                <div class="searchResult"></div>
+            </div> -->
+            <div class="heading">
+                <h3 class="title"></h3>
+                <div class="image">
+                    <img src="http://4.bp.blogspot.com/-yTzl4P0h8js/TdZz_GznyYI/AAAAAAAABp4/H1KpDLgnRIc/s400/sheikh-mishary-rashed-alafasy.jpg" alt="">
+                </div>
+                <div class="songName">
+                </div>
+                <p class="artistName"></p>
+            </div>
+
+            <div class="volume">
+                <ion-icon name="remove-outline" class="decrease"></ion-icon>
+                <input type="range" class="volumeBtn" min="1" max="100" id=""  value="50">
+                <ion-icon name="add-outline" class="increase"></ion-icon>
+            </div>
+            
+            <div class="controls">
+                <div class="defaultTime"></div>
+                <div class="previous">
+                    <ion-icon name="play-back-outline"></ion-icon>
+                </div>
+                <div class="play">
+                    <ion-icon name="play-outline"></ion-icon>
+                </div>
+                <div class="next">
+                    <ion-icon name="play-forward-outline"></ion-icon>
+                </div>
+                <div class="stop">
+                    <ion-icon name="stop-outline" class="stop"></ion-icon>
+                </div>
+                <div class="endTime"></div>
+            </div>
+    
+            <div class="progress">
+                <!-- <input type="range" min="1" max="100" value="0" class="progress"> -->
+            </div>
+        </div>
+    </div>
+    
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <!-- <script src="music.js"></script> -->
+    <script src="fetch.js"></script>
+</body>
+</html>
